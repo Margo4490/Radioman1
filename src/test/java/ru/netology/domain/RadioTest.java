@@ -8,9 +8,9 @@ public class RadioTest {
 
 
     @Test
-    public void shouldUseMaxRadioStation() {
-        Radio radio = new Radio(10, 9);
-        assertEquals(9, radio.getMaxRadioStation());
+    public void shouldUseRadioStation() {
+        Radio radio = new Radio(5);
+        assertEquals(4, radio.getNumberOfRadioStation());
 
     }
 
