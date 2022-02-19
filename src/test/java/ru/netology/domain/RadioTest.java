@@ -8,17 +8,17 @@ public class RadioTest {
 
 
     @Test
-    public void shouldUseRadioStation() {
-        Radio radio = new Radio(5);
-        assertEquals(4, radio.getNumberOfRadioStation());
+    public void shouldMaxStation() {
+        Radio radio = new Radio();
+        assertEquals(9, radio.getMaxRadioStation());
 
     }
 
     @Test
-    public void numberOfRadioStation() {
+    public void shouldMaRadioStation() {
 
-        Radio radio1 = new Radio();
-        assertEquals(10, radio1.getNumberOfRadioStation());
+        Radio radio1 = new Radio(6,5);
+        assertEquals(5, radio1.getMaxRadioStation());
     }
 
 
