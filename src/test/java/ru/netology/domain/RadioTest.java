@@ -10,15 +10,14 @@ public class RadioTest {
     @Test
     public void shouldMaxStation() {
         Radio radio = new Radio();
-        assertEquals(9, radio.getMaxRadioStation());
+        assertEquals(9, radio.getNumberOfStation());
 
     }
 
     @Test
-    public void shouldMaRadioStation() {
-
-        Radio radio1 = new Radio(6,5);
-        assertEquals(5, radio1.getMaxRadioStation());
+    public void getNumberStation() {
+        Radio radio1 = new Radio(6);
+        assertEquals(6, radio1.getNumberOfStation());
     }
 
 
